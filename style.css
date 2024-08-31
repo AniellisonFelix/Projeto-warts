@@ -1,0 +1,244 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* CABEÇALHO */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(50, 167, 145);
+  height: 100px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.trybewarts-login {
+  display: flex;
+  gap: 10px;
+  margin-right: 10px;
+}
+
+.trybewarts-header-logo {
+  height: 100px;
+  margin-left: 10px;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+  display: flex;
+}
+
+h1 {
+  font-size: 50px;
+  color: #fff;
+}
+
+.trybewarts-login input {
+  width: 130px;
+  height: 25px;
+  border-radius: 5px 5px;
+  border: none;
+  padding-left: 5px;
+}
+
+.trybewarts-login button {
+  height: 25px;
+  width: 100px;
+  background-color: #4E2C83;
+  border: none;
+  color: #fff;
+  border-radius: 5px 5px;
+  cursor: pointer;
+}
+
+/* MAIN */
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 10px;
+  background: linear-gradient(#F0F8FF, #f0f8ffb2
+),
+    url('images/pngtree-harry-potter-star-icon-sticker-vector-png-image_12232068.png');
+  /* background-image: linear-gradient( */
+    /* rgba(247, 242, 242, 0.479), rgba(243, 235, 235, 0.445) */
+  /* ), */
+    /* url('./images/hogwarts-backdrop-1500.jpg'); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+#evaluation-form {
+    display: flex;
+    width: 675px;
+    flex-direction: column;
+    border-radius: 10px;
+    margin: 20px 40px;
+    padding: 15px;
+    border: 1px solid rgb(172, 172, 172);
+    font-size: 16px;
+    align-self: auto;
+}
+
+#evaluation-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 2px rgb(0, 0, 0, 0.2);
+  line-height: 1.5em;
+}
+
+label {
+  text-shadow: 2px 2px 2px rgb(0, 0, 0, 0.2);
+}
+
+#input-name , #input-lastname , #input-email , #house {
+  height: 40px;
+  border: 1px solid rgb(81, 74, 146);
+  box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.2);
+  outline: none;
+  border-radius: 5px;
+  background-color: #fff;
+  padding-left: 10px;
+  font-size: 12px;
+}
+
+#input-name , #input-lastname {
+  width: 100%;
+}
+
+#input-email {
+  width: 50%;
+}
+
+#label {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  justify-content: space-between;
+}
+
+#house {
+  width: 82%;
+}
+
+#input-name:focus , #input-lastname:focus , #input-email:focus, #house:focus , #email:focus , #senha:focus {
+  background: rgb(180, 225, 231);
+}
+
+.input-container {
+  display: flex;
+  justify-content: start;
+  gap: 6px;
+  width: 100%;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.check-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.evaluation-form {
+ flex-direction: column;
+}
+
+.trybewarts-header-logo {
+  width: 70px;
+  margin-left: 10px;
+}
+
+.radio-family {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+}
+
+.checkbox {
+  display: flex;
+  gap: 20px;
+}
+
+.rate-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.rate [ name *= 'rate' ] {
+  margin-left: 5px;
+}
+
+#textarea {
+  border-radius: 5px;
+  border: 1px solid rgb(81, 74, 146);
+  box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.2);
+  outline: none;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+.textarea {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  margin-top: 10px;
+}
+
+#counter {
+  text-align: end;
+  position: relative;
+  top: -40px;
+  right: 10px;
+  color: black;
+}
+
+#submit-btn {
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: rgb(81, 74, 146);
+  box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.2);
+  color: white;
+  transition: 0.3s;
+  margin-top: 10px;
+  height: 25px;
+}
+
+#submit-btn:disabled {
+  opacity: 0.5;
+}
+
+
+#submit-btn:enabled {
+  opacity: 0.8;
+}
+
+#submit-btn:enabled:hover {
+  opacity: 1;
+}
+
+.container-form {
+  display: flex;
+  margin: 20vh 0;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.2);
+  border: 1px solid rgb(172, 172, 172);
+  transition: 0.3s;
+}
+
+footer {
+  text-align: center;
+  background-color: #000;
+  padding: 5px;
+  color: white;
+}
